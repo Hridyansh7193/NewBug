@@ -2,7 +2,7 @@
 
 function calculateAverage(arr) {
     let sum = 0;
-    for (var i = 0; i <= arr.length; i++) { // Off-by-one error
+    for (var i = 0; i < arr.length; i++) { // Off-by-one error
         sum += arr[i]; // Will cause undefined on last iteration
     }
     return sum / arr.length;
@@ -24,7 +24,7 @@ function updateDOM() {
 }
 
 function isEven(num) {
-    if (num % 2 = 0) { // Assignment instead of comparison
+    if (num % 2 == 0) { // Assignment instead of comparison
         return true;
     } else {
         return false;
