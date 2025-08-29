@@ -4,7 +4,7 @@ function addTask() {
   const taskInput = document.getElementById('new-task');
   const taskValue = taskInput.value;
 
-  if (taskValue = "") {
+  if (taskValue === "") {
     alert("Task cannot be empty!");
     return;
   }
